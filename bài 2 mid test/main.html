@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8b6d6d;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('NT.png');
+            background-size: cover;
+            background-attachment: fixed;
+            display:flex;
+        }
+        #timer {
+            font-size: 48px;
+            color: #7a2525;
+        }
+        #controls {
+            margin-top: 10px;
+        }
+        #controls input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="timer">00:00</div>
+        <div id="controls">
+            <input type="number" id="minutes" placeholder="Minutes">
+            <input type="number" id="seconds" placeholder="Seconds">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetcountdown()">Reset</button>
+        </div>
+    </div>
+    <audio id="alarmsound" src="y2mate.com - This is America I guess Eugene Tsai Remix_v144P.mp4"></audio>
+    <script src="test.js"></script>
+</body>
+</html>
